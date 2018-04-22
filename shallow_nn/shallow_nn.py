@@ -84,4 +84,4 @@ for ep in range(0, epoch):
 print(running_loss)
 print(tch.round(net(x)))
 
-#print x_n, x
+"""should output a value equal to Y"""
