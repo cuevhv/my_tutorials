@@ -59,7 +59,7 @@ output = net(x)
 print("output with random weights and its size")
 print(output)
 
-"""we use MSE (y-y_hat)**2"""
+"""we use MSE (y-y_hat)^2"""
 criterion = nn.MSELoss()
 
 """ The optimizer is an stochastic gradient descent so w = w-df/dw"""
