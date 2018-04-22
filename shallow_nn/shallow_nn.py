@@ -62,11 +62,11 @@ print(output)
 """we use MSE (y-y_hat)^2"""
 criterion = nn.MSELoss()
 
-""" The optimizer is an stochastic gradient descent so w = w-df/dw"""
+""" The optimizer is an stochastic gradient descent so w = w-lr*df/dw"""
 optimizer = optim.SGD(net.parameters(), lr = 0.1, momentum = 0)
 epoch = 20000
 
-print "We iterate 10000 times to reduce our loss"
+print "We iterate 20000 times to reduce our loss"
 
 running_loss = 0.0
 for ep in range(0, epoch):
@@ -85,3 +85,4 @@ print(running_loss)
 print(tch.round(net(x)))
 
 """should output a value equal to Y"""
+
